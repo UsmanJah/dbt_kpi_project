@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: source_listings_hosts
+    description: "the model"
+    columns:
+      - name: listings_id
+        description: "primary key"
+        tests:
+           - unique

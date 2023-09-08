@@ -1,0 +1,21 @@
+select
+    id as listings_id,
+    host_id,
+    name as listings_name,
+    bedroom,
+    bed,
+    bath,
+    neighbourhood,
+    latitude,
+    longitude,
+    room_type,
+    price,
+    minimum_nights,
+    number_of_reviews,
+    last_review,
+    reviews_per_month,
+    calculated_host_listings_count,
+    availability_365,
+    number_of_reviews_ltm,
+    license
+from  {{ source('staging', 'listingsparis') }}
