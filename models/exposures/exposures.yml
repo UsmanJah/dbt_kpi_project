@@ -1,0 +1,22 @@
+version: 2
+
+exposures:
+
+  - name: daily_airbnb_kpis
+    label: AirBnB daily kpi's
+    type: dashboard
+    maturity: high
+
+    depends_on:
+      - ref('kpi_room_type')
+      - ref('kpi_activity_occp_12_month')
+      - ref('kpi_top_host')
+      - ref('kpi_license')
+      - ref('kpi_short_term_rental')
+      - ref('kpi_listings_per_hosts')
+      - source("staging","hosts") 
+      - source("staging","listings")
+
+    owner:
+      name: Team DBT
+      email: vonewman7@gmail.com
