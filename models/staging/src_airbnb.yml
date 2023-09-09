@@ -2,16 +2,16 @@ version: 2
 
 sources:
   - name: staging
-    database: atos
-    schema: airbnb
+    database: dbt_base
+    schema: public
     tables:
-       - name: listingsparis
+       - name: listings
          columns:
           - name: id
             tests:
               - unique
               - not_null
-       - name: hostsparis
+       - name: hosts
          columns:
           - name: host_id
             tests:

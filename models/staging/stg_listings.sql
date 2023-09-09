@@ -18,4 +18,4 @@ select
     availability_365,
     number_of_reviews_ltm,
     license
-from  {{ source('staging', 'listingsparis') }}
+from  {{ source('staging', 'listings') }}
