@@ -1,4 +1,8 @@
-Welcome to your new dbt project!
+### Membre du groupes
+- Adja Awa TRAORE
+- Abdoulaye DIALLO
+- Papa SEYE
+- Ousmane DIA
 
 ### Using the starter project
 
